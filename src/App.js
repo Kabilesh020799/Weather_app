@@ -1,15 +1,13 @@
 import './App.css';
-import UserProfile from './components/user-profile';
-import profileLogo from './images/pic.webp';
+import { BrowserRouter as Router } from 'react-router-dom';
+import MainRoute from './router/route';
 
 function App() {
   return (
     <div className="App">
-      <UserProfile
-        name="Kabilesh"
-        email="kabilesh@dal.ca"
-        picture={profileLogo}
-      />
+      <Router>
+        <MainRoute />
+      </Router>
     </div>
   );
 }
