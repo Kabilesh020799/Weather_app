@@ -7,7 +7,7 @@ describe('TodoList Component', () => {
   it('allows users to add items to the list', () => {
     render(<TodoList />);
     const inputElement = screen.getByRole('textbox');
-    const addButton = document.querySelector(".todo-list-header-btn");
+    const addButton = document.querySelector("#todo-list-header-btn");
 
     fireEvent.change(inputElement, { target: { value: 'Todo Task' } });
     fireEvent.click(addButton);
@@ -17,7 +17,7 @@ describe('TodoList Component', () => {
   it('allows users to toggle the checked state of items', () => {
     render(<TodoList />);
     const inputElement = screen.getByRole('textbox');
-    const addButton = document.querySelector(".todo-list-header-btn");
+    const addButton = document.querySelector("#todo-list-header-btn");
 
     // Add item
     fireEvent.change(inputElement, { target: { value: 'Todo Task' } });
@@ -34,7 +34,7 @@ describe('TodoList Component', () => {
   it('allows users to remove items from the list', () => {
     render(<TodoList />);
     const inputElement = screen.getByRole('textbox');
-    const addButton = document.querySelector(".todo-list-header-btn");
+    const addButton = document.querySelector("#todo-list-header-btn");
 
     // Add item
     fireEvent.change(inputElement, { target: { value: 'Todo Task' } });

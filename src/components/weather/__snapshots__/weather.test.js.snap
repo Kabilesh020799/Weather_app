@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Weather Component renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="weather"
+  >
+    <div
+      class="weather_header"
+    >
+      <input
+        class="weather_input"
+        placeholder="Enter the city name"
+        value=""
+      />
+      <button
+        class="weather_btn"
+      >
+        Submit
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Weather Component with Prop Data Snapshot Testing 1`] = `
+<DocumentFragment>
+  <div
+    class="weather"
+  >
+    <div
+      class="weather_header"
+    >
+      <input
+        class="weather_input"
+        placeholder="Enter the city name"
+        value=""
+      />
+      <button
+        class="weather_btn"
+      >
+        Submit
+      </button>
+    </div>
+    <div
+      class="weather_body"
+    >
+      <div
+        class="weather_body_head"
+      >
+        Berlin
+      </div>
+      <div
+        class="weather_body_sub"
+      >
+        Current Temperature
+      </div>
+      <div
+        class="weather_body_temp"
+        id="temp"
+      >
+        22 °C 
+      </div>
+      <div
+        class="weather_body_sub"
+      >
+        Weather
+      </div>
+      <div
+        class="weather_body_temp"
+        id="weather"
+      >
+        Clear sky
+      </div>
+      <div
+        class="weather_body_sub"
+      >
+        Humidity
+      </div>
+      <div
+        class="weather_body_temp"
+        id="humidity"
+      >
+        55 %
+      </div>
+      <div
+        class="weather_body_sub"
+      >
+        Wind Speed
+      </div>
+      <div
+        class="weather_body_temp"
+        id="wind"
+      >
+        3.5 m/s
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

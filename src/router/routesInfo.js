@@ -1,5 +1,6 @@
 import TodoList from "../components/todo-list";
 import UserProfile from "../components/user-profile";
+import Weather from "../components/weather";
 import profileLogo from '../images/pic.webp';
 
 const routes = [
@@ -19,6 +20,13 @@ const routes = [
     component: (
       <TodoList />
     )
+  },
+  {
+    id: 'weather',
+    route: 'weather',
+    component: (
+      <Weather />
+    ),
   },
 ];
 
