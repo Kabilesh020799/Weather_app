@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserProfile Component Snapshot Testing - UserProfile 1`] = `
+<DocumentFragment>
+  <div
+    class="user-profile"
+  >
+    <div
+      class="user-profile-pic"
+    >
+      <img
+        alt=""
+        class="user-profile-pic-img"
+        src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+      />
+    </div>
+    <div
+      class="user-profile-info"
+    >
+      <div
+        class="user-profile-info-name"
+      >
+        <span>
+          Name: 
+        </span>
+        <span>
+          Kabzi
+        </span>
+      </div>
+      <div
+        class="user-profile-info-email"
+      >
+        <span>
+          Email: 
+        </span>
+        <span>
+          kabzi@gmail.com
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
