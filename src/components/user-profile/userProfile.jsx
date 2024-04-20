@@ -1,5 +1,5 @@
 import React from "react";
-import './style.scss';
+import classes from './style.module.css';
 
 const UserProfile = (props) => {
   const {
@@ -9,16 +9,16 @@ const UserProfile = (props) => {
   } = props;
 
   return (
-    <div className="user-profile">
-      <div className="user-profile-pic">
-        <img src={picture} alt="" className="user-profile-pic-img" />
+    <div className={classes.user_profile}>
+      <div className={classes.user_profile_pic}>
+        <img src={picture} alt="logo" className={classes.user_profile_pic_img} />
       </div>
-      <div className="user-profile-info">
-        <div className="user-profile-info-name">
+      <div className={classes.user_profile_info}>
+        <div className={classes.user_profile_info_name}>
           <span>Name: </span>
           <span>{name}</span>
         </div>
-        <div className="user-profile-info-email">
+        <div className={classes.user_profile_info_email}>
           <span>Email: </span>
           <span>{email}</span>
         </div>
