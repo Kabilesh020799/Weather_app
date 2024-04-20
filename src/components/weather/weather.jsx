@@ -16,21 +16,25 @@ const Weather = (props) => {
       setWeather(weatherItem);
     }
   }, [weatherItem]);
-  
+
   const onClick = async() => {
     let data = await fetch(url);
     data = await data.json();
     setWeather(data);
   };
-
+console.log(weather)
   return (
     <div className={classes.weather}>
       <div className={classes.weather_header}>
-        <input placeholder="Enter the city name" className={classes.weather_input} onChange={(e) => setCity(e.target.value)} value={city} />
+        <input placeholder="Enter the city name" className={classes.weather_input} onKeyDown={(e) => {
+          if(e.key === 'Enter') {
+            onClick();
+          }
+        }} onChange={(e) => setCity(e.target.value)} value={city} />
         <button onClick={onClick} className={classes.weather_btn}>Submit</button>
       </div>
       {
-        weather ? (
+        (weather && weather?.cod !== "404") ? (
           <div className={classes.weather_body}>
             <div className={classes.weather_body_head}>{weather?.name}</div>
             <div className={classes.weather_body_sub}>Current Temperature</div>
