@@ -1,3 +1,4 @@
+import TodoList from "../components/todo-list";
 import UserProfile from "../components/user-profile";
 import profileLogo from '../images/pic.webp';
 
@@ -11,6 +12,13 @@ const routes = [
         email="kabilesh@dal.ca"
         picture={profileLogo}
       />),
+  },
+  {
+    id: 'todo-list',
+    route: 'todo-list',
+    component: (
+      <TodoList />
+    )
   },
 ];
 
