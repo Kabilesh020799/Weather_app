@@ -14,7 +14,7 @@ describe('TodoList Component', () => {
     expect(screen.getByText('Todo Task')).toBeInTheDocument();
   });
 
-  it('allows users to toggle the checked state of items', () => {
+  it('toggle', () => {
     render(<TodoList />);
     const inputElement = screen.getByRole('textbox');
     const addButton = document.querySelector("#todo-list-header-btn");

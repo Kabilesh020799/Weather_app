@@ -3,22 +3,23 @@
 exports[`UserProfile Component Snapshot Testing - UserProfile 1`] = `
 <DocumentFragment>
   <div
-    class="user-profile"
+    class="user_profile"
   >
     <div
-      class="user-profile-pic"
+      class="user_profile_pic"
     >
       <img
-        alt=""
-        class="user-profile-pic-img"
+        alt="logo"
+        class="user_profile_pic_img"
+        id="user-profile-pic-img"
         src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
       />
     </div>
     <div
-      class="user-profile-info"
+      class="user_profile_info"
     >
       <div
-        class="user-profile-info-name"
+        class="user_profile_info_name"
       >
         <span>
           Name: 
@@ -28,7 +29,7 @@ exports[`UserProfile Component Snapshot Testing - UserProfile 1`] = `
         </span>
       </div>
       <div
-        class="user-profile-info-email"
+        class="user_profile_info_email"
       >
         <span>
           Email: 

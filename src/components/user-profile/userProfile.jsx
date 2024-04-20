@@ -11,7 +11,7 @@ const UserProfile = (props) => {
   return (
     <div className={classes.user_profile}>
       <div className={classes.user_profile_pic}>
-        <img src={picture} alt="logo" className={classes.user_profile_pic_img} />
+        <img src={picture} alt="logo" id="user-profile-pic-img" className={classes.user_profile_pic_img} />
       </div>
       <div className={classes.user_profile_info}>
         <div className={classes.user_profile_info_name}>

@@ -1,28 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Weather Component renders correctly and matches snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="weather"
-  >
-    <div
-      class="weather_header"
-    >
-      <input
-        class="weather_input"
-        placeholder="Enter the city name"
-        value=""
-      />
-      <button
-        class="weather_btn"
-      >
-        Submit
-      </button>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
 exports[`Weather Component with Prop Data Snapshot Testing 1`] = `
 <DocumentFragment>
   <div

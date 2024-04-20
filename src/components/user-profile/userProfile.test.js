@@ -22,7 +22,7 @@ describe('UserProfile Component', () => {
     expect(screen.getByText('kabzi@gmail.com')).toBeInTheDocument();
 
     // Check if the image is rendered with the correct src
-    const image = document.querySelector('.user-profile-pic-img');
+    const image = document.querySelector('#user-profile-pic-img');
     expect(image).toHaveAttribute('src', 'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
   });
   it('Snapshot Testing - UserProfile', () => {
