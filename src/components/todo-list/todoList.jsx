@@ -12,7 +12,7 @@ const TodoList = () => {
   return (
     <div className="todo-list">
       <div className="todo-list-header">
-        <input type="text" className="todo-list-header-input" value={todo} onChange={(e) => setTodo(e.target.value)} onKeyDown={(e) => {
+        <input type="text" placeholder="Enter a Task" className="todo-list-header-input" value={todo} onChange={(e) => setTodo(e.target.value)} onKeyDown={(e) => {
           if(e.key === 'Enter') {
             setItems((prev) => [...prev, { name: todo, checked: false }]);
             setTodo('');
